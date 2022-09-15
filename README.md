@@ -16,7 +16,7 @@ composer create-project --prefer-dist "cakephp/app:4.*" myapp
 cp -r docker docker-compose.yml setup.sh __WORKDIR__/myapp
 ```
 ## Setup CakePHP
-edit `__WORKDIR__/myapp/config/app_local.php` as below.
+Edit `__WORKDIR__/myapp/config/app_local.php` as below.
 
 ### database
 ```
@@ -35,6 +35,7 @@ edit `__WORKDIR__/myapp/config/app_local.php` as below.
     ],
 ],
 ```
+See `docker/db/db_init/00_init.sql`.
 
 ### mail
 
