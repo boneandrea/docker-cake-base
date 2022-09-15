@@ -3,7 +3,7 @@
 How to create containers where CakePHP runs.
 # How
 
-## Install WebApp
+## Install webapp
 
 Install cakephp in working directory.
 ```
@@ -11,11 +11,11 @@ cd __WORKDIR__
 composer create-project --prefer-dist "cakephp/app:4.*" myapp
 ```
 
-## Add Docker config
+## Add docker config
 ```
 cp -r docker docker-compose.yml setup.sh __WORKDIR__/myapp
 ```
-## Setup App
+## Setup CakePHP
 edit `__WORKDIR__/myapp/config/app_local.php` as below.
 
 ### database
