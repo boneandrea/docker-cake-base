@@ -1,5 +1,5 @@
-CREATE DATABASE stg_pet_lifestyle_com;
-CREATE DATABASE test_pet_lifestyle_com;
+CREATE DATABASE project;
+CREATE DATABASE test_project;
 
-GRANT ALL PRIVILEGES ON stg_pet_lifestyle_com.* TO user@"%" IDENTIFIED BY 'pass' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON test_pet_lifestyle_com.* TO user@"%" IDENTIFIED BY 'pass' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON project.* TO user@"%" IDENTIFIED BY 'pass' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON test_project.* TO user@"%" IDENTIFIED BY 'pass' WITH GRANT OPTION;
