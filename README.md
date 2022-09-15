@@ -41,7 +41,7 @@ See `docker/db/db_init/00_init.sql`.
 
 ```
 'EmailTransport' => [
-    'local' => [
+    'default' => [
         'className' => 'Smtp',
         'host' => 'mailhog',
         'port' => 1025,
