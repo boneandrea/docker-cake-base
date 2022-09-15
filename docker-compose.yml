@@ -10,6 +10,7 @@ services:
     depends_on:
       - db
       - mailhog
+
   db:
     image: mysql:8.0
     environment:
