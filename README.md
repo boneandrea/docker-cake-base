@@ -36,7 +36,7 @@ edit `__WORKDIR__/myapp/config/app_local.php` as below.
 ],
 ```
 
-### mail server
+### mail
 
 ```
 'EmailTransport' => [
