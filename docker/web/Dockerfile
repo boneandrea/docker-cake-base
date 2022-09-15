@@ -15,4 +15,3 @@ RUN a2enmod rewrite
 RUN (curl -sS https://getcomposer.org/installer | php) && mv composer.phar /usr/local/bin/composer
 
 EXPOSE 80
-#CMD ["/usr/bin/supervisord"]
