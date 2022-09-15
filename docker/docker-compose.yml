@@ -16,12 +16,11 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       TZ: "Asia/Tokyo"
-    args:
-      DATABASE: "${DATABASE:-myproject}"
+    # args:
+    #   DATABASE: "${DATABASE:-myproject}"
     volumes:
       - ./db/db_init:/docker-entrypoint-initdb.d
     ports:
-#      - "${WEB_PORT:-3000}:80"
       - 3306:3306
 
   mailhog:

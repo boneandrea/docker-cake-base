@@ -15,10 +15,5 @@ ARG APP_NAME
 # install composer
 RUN (curl -sS https://getcomposer.org/installer | php) && mv composer.phar /usr/local/bin/composer
 
-# 光遅い問題 (https://qiita.com/bezeklik/items/f9bc7afc229b5476e822)
-#RUN composer config -g repos.packagist composer https://packagist.jp && composer global require hirak/prestissimo
-
-ADD supervisord.conf /etc/supervisord.conf
-
 EXPOSE 80
 #CMD ["/usr/bin/supervisord"]
