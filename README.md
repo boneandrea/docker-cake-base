@@ -12,7 +12,7 @@ composer create-project --prefer-dist "cakephp/app:4.*" myapp
 ```
 cp -r docker docker-compose.yml setup.sh __WORKDIR__/myapp
 ```
-## Setup db connection
+## Setup App: db connection
 
 edit `__WORKDIR__/myapp/config/app_local.php` as below.
 
