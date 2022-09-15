@@ -1,8 +1,8 @@
 #!/bin/bash
 set -ex
 
-#docker-compose build # --no-cache
-#docker-compose up # -d
+docker-compose build --no-cache
+docker-compose up -d
 
 docker-compose run --rm web bin/cake version
 
