@@ -15,7 +15,9 @@ composer create-project --prefer-dist "cakephp/app:4.*" myapp
 ```
 cp -r docker docker-compose.yml setup.sh __WORKDIR__/myapp
 ```
-## Setup App: db connection
+## Setup App
+
+### db connection
 
 edit `__WORKDIR__/myapp/config/app_local.php` as below.
 
@@ -35,6 +37,23 @@ edit `__WORKDIR__/myapp/config/app_local.php` as below.
     ],
 ],
 ```
+
+### Mail server
+
+```
+	'EmailTransport' => [
+		...
+		'local' => [
+			'className' => 'Smtp',
+			'host' => 'mailhog',
+			'port' => 1025,
+			'timeout' => 30,
+			'tls' => null,
+		],
+	],
+```
+
+
 ## Create containers
 To create and start:
 ```
