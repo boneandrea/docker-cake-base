@@ -36,6 +36,7 @@ edit `__WORKDIR__/myapp/config/app_local.php` as below.
 ],
 ```
 ## Create containers
+To create and start:
 ```
 cd __WORKDIR__/myapp
 ./setup.sh
