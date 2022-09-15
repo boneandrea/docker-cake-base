@@ -75,3 +75,11 @@ WEB_PORT=8888
 
 ### database
 To change database name, user name or user password, edit `docker/db/db_init/00_init.sql`.
+
+### mail
+To change mailhog web client port, edit `.env`.
+```
+MAILHOG_WEB_PORT=8888
+```
+
+See `.env.example`.

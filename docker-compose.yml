@@ -9,6 +9,7 @@ services:
       - .:/var/www/html
     depends_on:
       - db
+      - mailhog
   db:
     image: mariadb:10.3.31
     command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci
@@ -23,4 +24,4 @@ services:
   mailhog:
     image: mailhog/mailhog
     ports:
-      - "8025:8025"
+      - "${MAILHOG_WEB_PORT:-8025}:8025"
