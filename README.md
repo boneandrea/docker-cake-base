@@ -64,3 +64,14 @@ Access http://localhost:3000 via browser.
 ```
 docker-compose run --rm web bash
 ```
+
+## Customize
+
+### web 
+To change http port, edit `.env`.
+```
+WEB_PORT=8888
+```
+
+### database
+To change database name, user name or user password, edit `docker/db/db_init/00_init.sql`.
