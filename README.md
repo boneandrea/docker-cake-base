@@ -15,6 +15,12 @@ composer create-project --prefer-dist "cakephp/app:4.*" myapp
 ```
 cp -r docker docker-compose.yml setup.sh __WORKDIR__/myapp
 ```
+
+## Add support tools config
+```
+cp .prettierrc.json .eslintrc.json .php-cs-fixer.php ruleset.xml __WORKDIR__/myapp
+```
+
 ## Setup CakePHP
 Edit `__WORKDIR__/myapp/config/app_local.php` as below.
 
@@ -67,7 +73,7 @@ docker-compose run --rm web bash
 
 ## Customize
 
-### web 
+### web
 To change http port, edit `.env`.
 ```
 WEB_PORT=8888
